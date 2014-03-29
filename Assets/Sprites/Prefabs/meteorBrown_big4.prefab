@@ -11,9 +11,10 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 60: {fileID: 6000000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: meteorBrown_big4
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +76,18 @@ PolygonCollider2D:
       - {x: .0799999982, y: -.469999999}
       - {x: .269999981, y: -.449999988}
       - {x: .310000002, y: -.439999998}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869272604ddb37488a28cf503ccea5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

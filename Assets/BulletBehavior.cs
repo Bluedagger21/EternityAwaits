@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletBehavior : MonoBehaviour {
 	public float timeAliveLimit;
 	public float speed;
+	public int damage;
 
 	private float startTime;
 	// Use this for initialization
@@ -19,7 +20,9 @@ public class BulletBehavior : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D theCollision) {
-		if(theCollision.gameObject.tag != "Player")
+		if(theCollision.gameObject.tag != "Player") {
 			Destroy (this.gameObject);
+			theCollision.gameObject.BroadcastMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
+		}
 	}
 }

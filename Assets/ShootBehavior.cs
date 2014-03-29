@@ -17,6 +17,7 @@ public class ShootBehavior : MonoBehaviour {
 		if(Input.GetKey("space") && Time.time > nextFire) {
 			nextFire = Time.time + fireRate;
 			GameObject clone = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
+			audio.Play();
 		}
 	}
 }
