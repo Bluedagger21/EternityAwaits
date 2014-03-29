@@ -21,4 +21,9 @@ public class AsteroidBehavior : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 	}
+
+	void Create() {
+		Start ();
+
+	}
 }
